@@ -11,6 +11,7 @@ import org.apache.http.message.BasicHeader;
  * 微信提供接口基类
  * @author Jaswine
  */
+@Data
 public abstract class BaseAPI {
 
 	/**

@@ -1,4 +1,4 @@
-package com.jaswine.pblog.entity.user;
+package com.jaswine.pblog.beans.user;
 
 
 /**

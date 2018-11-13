@@ -1,10 +1,13 @@
-package com.jaswine.pblog.entity.message;
+package com.jaswine.pblog.beans.message;
 
+
+import lombok.Data;
 
 /**
  * 图片信息
  * @author Jaswine
  */
+@Data
 public class ImageMessage extends BaseMessage {
 	/**
 	 * 图片链接（由微信系统生成）

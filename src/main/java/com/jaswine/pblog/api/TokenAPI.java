@@ -1,7 +1,9 @@
 package com.jaswine.pblog.api;
 
 
-import com.jaswine.pblog.result.Token;
+import com.jaswine.pblog.beans.result.Token;
+import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.client.methods.RequestBuilder;
 
 /**
  * 获得access_token接口
@@ -18,6 +20,7 @@ public class TokenAPI extends BaseAPI {
 				.addParameter("appid", appid)
 				.addParameter("secret", appsecret)
 				.build();
-
+		return null;
 	}
+
 }

@@ -1,9 +1,12 @@
-package com.jaswine.pblog.entity.message;
+package com.jaswine.pblog.beans.message;
+
+import lombok.Data;
 
 /**
  * 地理位置消息
  * @author Jaswine
  */
+@Data
 public class LocationMessage extends BaseMessage {
 	/**
 	 * 地理位置维度

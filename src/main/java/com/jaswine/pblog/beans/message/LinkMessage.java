@@ -1,4 +1,4 @@
-package com.jaswine.pblog.entity.message;
+package com.jaswine.pblog.beans.message;
 
 /**
  * 链接消息

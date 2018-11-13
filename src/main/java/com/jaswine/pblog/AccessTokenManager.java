@@ -1,10 +1,10 @@
 package com.jaswine.pblog;
 
 
+import com.jaswine.pblog.api.TokenAPI;
+import com.jaswine.pblog.beans.result.Token;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import weixin.popular.api.TokenAPI;
-import weixin.popular.bean.token.Token;
 
 import java.util.Map;
 import java.util.concurrent.*;
@@ -114,7 +114,7 @@ public class AccessTokenManager {
 	 * @param appsecret appsecret
 	 */
 	private  void doRun(final String appid,final String appsecret){
-		Token token = TokenAPI.token(appid, appsecret);
+		Token token = TokenAPI.getToken(appid, appsecret);
 		if (token.getAccess_token() == null){
 			LOGGER.error("[AccessTokenManager]请求accesstoken错误,错误码:{"+token.getErrcode()+"};错误信息:{"+ token.getErrmsg() +"}");
 		}else {

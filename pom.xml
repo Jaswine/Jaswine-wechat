@@ -6,7 +6,65 @@
 
     <groupId>com.jaswine</groupId>
     <artifactId>Jaswine-wechat</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${wechat.version}</version>
+    <packaging>jar</packaging>
+
+    <name>Jaswine-wechat</name>
+    <description>
+        基于微信规范开发的工具框架,方便微信开发
+    </description>
+
+    <distributionManagement>
+        <repository>
+            <id>jaswine-repo</id>
+            <url>file:I:\JaswineRepo\repo</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <finalName>jaswine-wechat</finalName>
+    </build>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <wechat.version>1.0-SNAPSHOT</wechat.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <httpclient.version>4.5.6</httpclient.version>
+        <lombok.version>1.16.22</lombok.version>
+    </properties>
+
+    <dependencies>
+
+        <!--slf日志-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <!--http-client-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+
+
+        <!--lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+
+    </dependencies>
 
 
 </project>
